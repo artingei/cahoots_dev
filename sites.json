@@ -1,0 +1,12 @@
+{ 
+    "www.zeit.de" : {
+            "ids" : [ "0001", "0002", "0003", "0004" ],
+            "descr" : "Die Zeit hat durch ihre Herausgeber <b>Josef Joffe</b> und <b>Helmut Schmidt</b> zahlreiche Verbindungen zu transatlantischen Lobbyorganisationen.",
+            "src" : "http://de.wikipedia.org/wiki/Die_Zeit"
+    },
+    "www.sueddeutsche.de" : {
+        "ids" : [ "0005", "0006", "0007", "0004" ],
+        "descr" : "Die Süddeutsche Zeitung (Abkürzung SZ) ist mit einer verkauften Auflage von 418.355 Exemplaren[1] die größte deutsche überregionale Abonnement-Tageszeitung.",
+        "src" : "http://de.wikipedia.org/wiki/S%C3%BCddeutsche_Zeitung"
+    }
+}

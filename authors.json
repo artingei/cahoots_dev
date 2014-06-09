@@ -1,0 +1,24 @@
+{ 
+    "0001" : {
+            "prename" : "Jochen",
+            "name" : "Bittner",
+            "descr": "Jochen Bittner (* 1973 in Frankenberg (Eder)) ist ein promovierter Jurist, Journalist und Publizist. Bittner studierte an der Universität Kiel Jura und Philosophie.",
+            "src" : "http://de.wikipedia.org/wiki/Die_Zeit",
+            "src": "http://de.wikipedia.org/wiki/Jochen_Bittner",
+            "url": "http://community.zeit.de/user/fritz-vorholz",
+            "cahoots": {
+                "1": {
+                    "name": "Atlantik-Brücke",
+                    "url": "http://www.atlantik-bruecke.org/",
+                    "description": "Die Atlantik-Brücke e. V. wurde 1952 als private, überparteiliche und gemeinnützige Organisation mit dem Ziel gegründet, eine wirtschafts-, finanz-, bildungs- und militärpolitische Brücke zwischen der Siegermacht USA und der Bundesrepublik Deutschland zu schlagen.",
+                    "src": "http://www.paul-schreyer.de/recherchen_63.html"
+                },
+                "2": {
+                    "name": "German Marshall Fund",
+                    "url": "missing_item",
+                    "description": "missing_item",
+                    "src": "missing_item"
+                    }
+                }
+            }
+}

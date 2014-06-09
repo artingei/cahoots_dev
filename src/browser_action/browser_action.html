@@ -1,0 +1,241 @@
+<!doctype html>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<base target="_blank">
+
+<head>
+	<script src="../../js/jquery-2.1.1.min.js" type="text/javascript"></script>
+	<script src="popup.js" type="text/javascript"></script>
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+	<style type="text/css">
+		#mainPopup {
+			font-family: Lato, sans-serif;
+			font-size: 15px;
+			color: #3C3C46;
+			padding: 0;
+			height: auto;
+			width: 500px;
+			line-height: 1.5em;
+		}
+
+		#header {
+			height: 66px;
+			width: 100%;
+			padding: 12px 20px;
+			margin: -8px -14px 0 -14px;
+			background: rgb(242,242,244);
+		}
+
+		.content_paper {
+			height: auto;
+			width: 100%;
+			padding: 8px 20px 4px 20px;
+			margin: -22px -14px;
+			background: #fff;
+			border-top: 1px solid #BEBEC8;
+		}
+
+		.content_author {
+			height: auto;
+			width: 100%;
+			padding: 8px 20px 4px 20px;
+			margin: -1px -14px;
+			background: #fff;
+			border-top: 1px solid #BEBEC8;
+		}
+
+		#description_author {
+			margin: 0;
+		}
+
+		a {
+			position: relative;
+			left: 425px;
+			top: -100px;
+			font-size: 12px;
+			font-weight: 700;
+			color: #BEBEC8;
+			text-decoration: none;
+		}
+
+		h1 {
+			font-size: 1.6em;
+			color: #000;
+			width: 100%;
+			font-weight: 700;
+		}
+		h2 {
+			font-size: 15px;
+			color: #3C3C46;
+			font-weight: 700;
+		}
+
+		#author_title {
+			margin-top: 20px;
+		}
+		#cahoots {
+			margin-top: 10px;
+		}
+
+		select {
+			font-size: 17px;
+		    padding:12px 32px;
+		    margin: 0;
+		    -webkit-border-radius:3px;
+		    -moz-border-radius:3px;
+		    border-radius:3px;
+		    background: #fff;
+		    border: 1px solid #BEBEC8;
+		    outline:none;
+		    display: inline-block;
+		    -webkit-appearance:none;
+		    -moz-appearance:none;
+		    appearance:none;
+		    cursor:pointer;
+		    width: 300px;
+		}
+
+		label {position:relative}
+		label:after {
+		    content:'>';
+		    background: url('select.png') center center no-repeat;
+		    font:24px 'lato';
+		    font-weight: 100;
+		    color: transparent;
+		    right: 16px; top:-5px;
+		    padding:0 0 2px;
+		    position:absolute;
+		    pointer-events:none;
+		    background-color: none;
+		}
+		label:before {
+		    content:'·';
+		    font-size: 56px;
+		    left:10px; top:-5px;
+		    width:20px; height:20px;
+		    color: #FF3264;
+		    position:absolute;
+		    pointer-events:none;
+		    display:block;
+		}
+
+		strong {
+			font-weight: 800;
+			color: #FF3264;
+		}
+
+		.accordion { 
+			margin: 0;
+		}
+		.accordion dd { 
+			display: none; 
+			padding: 20px 7px;
+			margin: 0;
+		}
+		.accordion dt { 
+			cursor: pointer; 
+			padding: 12px 0px; 
+			margin: -1px -8px; 
+			border-top: 1px solid #BEBEC8;
+			border-bottom: 1px solid #BEBEC8;
+			background: #F2F2F4;
+		}
+		.accordion dt.accordion-active { 
+			font-weight: 400;
+			color: #000;
+		}
+		.accordion dt:before { 
+			content:'>';
+		    background: url('select.png') center center no-repeat;
+		    font:24px 'lato';
+		    font-weight: 100;
+		    color: transparent;
+		    right: -475px; 
+		    top: 0;
+		    padding:0 0 2px;
+		    position: relative;
+		    pointer-events:none;
+		    background-color: none;
+		}
+		.accordion dt.accordion-active:before { 
+			/*background: url('select-color.png') center center no-repeat;*/
+		}
+
+		.accordion dt:hover:before { 
+			background: url('select-color.png') center center no-repeat;
+		}
+
+		.subline1 {
+			text-align: center;
+			vertical-align: center;
+			display: inline;
+			background: #F2F2F4;
+			padding: 14px 32px;
+			margin: 0 0 0 -8px;
+			border-top: 1px solid #BEBEC8;
+			border-right: 1px solid #BEBEC8;
+		}
+
+		.subline2 {
+			text-align: center;
+			vertical-align: center;
+			display: inline;
+			background: #F2F2F4;
+			padding: 14px 32px;
+			border-top: 1px solid #BEBEC8;
+			border-right: 1px solid #BEBEC8;
+		}
+
+		.subline3 {
+			text-align: center;
+			vertical-align: center;
+			display: inline;
+			background: url('logo.png') center center no-repeat;
+			padding: 14px 41px;
+			margin-right: -8px;
+			border-top: 1px solid #BEBEC8;
+		}
+
+
+	</style>
+</head>
+
+<body>
+
+<div id="mainPopup">
+	<div id="header">
+		<label>
+		    <select>
+		        <option selected id="author_title_short"> Select Box </option>
+		        <!-- <option>Short Option</option>
+		        <option>This Is A Longer Option</option> -->
+		    </select>
+		</label>
+		<p style="display: inline; margin-left: 20px; color: #A0A0AF; font-style: italic; font-weight: 400;">Zeit Online</p>
+	</div>
+	<div class="content_paper">
+		<p id="count">Es wurden <strong>2</strong> Cahoots für Jochen Bittner gefunden:</p>
+	</div><br>
+
+	<dl class="accordion">
+	  <dt id="cahoot1"></dt>
+	  <dd>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</dd>
+	  <dt id="cahoot2"></dt>
+	  <dd>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</dd>
+	</dl>
+	<div class="content_author">
+		<h2>Über den Autor</h2>
+		<p id="description_author">Jochen Bittner (* 1973 in Frankenberg (Eder)) ist ein promovierter Jurist, Journalist und Publizist. Bittner studierte an der Universität Kiel Jura und Philosophie.</p>
+		<a id="src_author">[ SOURCE ]</a>
+	</div>
+	<div class="content_author">
+		<h2>Über die Website</h2>
+		<p id="description_paper">Zu dieser Publikation liegen keine Daten vor.</p>
+		<a id="src_paper">[ SOURCE ]</a>
+	</div>
+	<div class="subline1">Auf cahoots.io einsehen</div><div class="subline2">Informationen melden</div><div class="subline3"></div>
+</div>
+
+<script src="accordion.js" type="text/javascript"></script>
+
+</body>
+</html>

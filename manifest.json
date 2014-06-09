@@ -1,0 +1,54 @@
+{
+  "name": "Cahoots",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "This extension was created with the awesome extensionizr.com",
+  "homepage_url": "http://extensionizr.com",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "background": {
+    "page": "src/bg/background.html",
+    "persistent": false
+  },
+  "options_page": "src/options/index.html",
+  "browser_action": {
+    "default_icon": "icons/icon19.png",
+    "default_title": "browser action demo",
+    "default_popup": "src/browser_action/browser_action.html",
+    "scripts": ["js/jquery-2.1.1.min.js", "popup.js", "accordion.js"]
+  },
+  "permissions": [
+    "chrome://favicon/",
+    "clipboardRead",
+    "clipboardWrite",
+    "contentSettings",
+    "notifications",
+    "tabs",
+    "http://artingei.de/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.google.com/*",
+        "http://www.zeit.de/*"
+      ],
+      "css": [
+        "src/inject/inject.css"
+      ]
+    },
+    {
+      "matches": [
+        "https://www.google.com/*",
+        "http://www.zeit.de/*"
+      ],
+      "js": [
+        "src/inject/inject.js",
+        "js/jquery-2.1.1.min.js"
+      ]
+    }
+  ]
+}
