@@ -30,6 +30,9 @@
     "tabs",
     "http://artingei.de/*"
   ],
+  "web_accessible_resources": [
+    "sites.json"
+  ],
   "content_scripts": [
     {
       "matches": [
