@@ -18,33 +18,40 @@
 		}
 
 		#header {
-			height: 66px;
-			width: 100%;
-			padding: 12px 20px;
+			height: 60px;
+			width: 514px;
+			padding: 0px 8px;
 			margin: -8px -14px 0 -14px;
 			background: rgb(242,242,244);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-bottom: 1px solid rgb(190,190,200);
 		}
 
-		.content_paper {
-			height: auto;
-			width: 100%;
-			padding: 8px 20px 4px 20px;
-			margin: -22px -14px;
-			background: #fff;
-			border-top: 1px solid #BEBEC8;
+		#paper_name {
+			width: 380px;
+			height: 100%;
+			font-size: 26px;
+			font-weight: 200;
+			align-self: flex-start;
+			margin: 17px 0 0 12px;
+			align-items: center;
+		  	justify-content: center;
+
 		}
 
-		.content_author {
-			height: auto;
-			width: 100%;
-			padding: 8px 20px 4px 20px;
-			margin: -1px -14px;
-			background: #fff;
-			border-top: 1px solid #BEBEC8;
-		}
-
-		#description_author {
-			margin: 0;
+		#cahoots_logo {
+			text-align: center;
+			vertical-align: center;
+			align-self: flex-start;
+			width: 80px;
+			height: 29px;
+			background: url('logo.png') center center no-repeat #fff;
+			padding: 15px 20px;
+			margin-right: -8px;
+			border-left: 1px solid rgb(181,181,181);
+			float: right;
 		}
 
 		a {
@@ -55,6 +62,13 @@
 			font-weight: 700;
 			color: #BEBEC8;
 			text-decoration: none;
+		}
+
+		a #src_cahoot {
+			display: inline;
+			text-align: right;
+			position: inherit;
+
 		}
 
 		h1 {
@@ -123,47 +137,6 @@
 			color: #FF3264;
 		}
 
-		.accordion { 
-			margin: 0;
-		}
-		.accordion dd { 
-			display: none; 
-			padding: 20px 7px;
-			margin: 0;
-		}
-		.accordion dt { 
-			cursor: pointer; 
-			padding: 12px 0px; 
-			margin: -1px -8px; 
-			border-top: 1px solid #BEBEC8;
-			border-bottom: 1px solid #BEBEC8;
-			background: #F2F2F4;
-		}
-		.accordion dt.accordion-active { 
-			font-weight: 400;
-			color: #000;
-		}
-		.accordion dt:before { 
-			content:'>';
-		    background: url('select.png') center center no-repeat;
-		    font:24px 'lato';
-		    font-weight: 100;
-		    color: transparent;
-		    right: -475px; 
-		    top: 0;
-		    padding:0 0 2px;
-		    position: relative;
-		    pointer-events:none;
-		    background-color: none;
-		}
-		.accordion dt.accordion-active:before { 
-			/*background: url('select-color.png') center center no-repeat;*/
-		}
-
-		.accordion dt:hover:before { 
-			background: url('select-color.png') center center no-repeat;
-		}
-
 		.subline1 {
 			text-align: center;
 			vertical-align: center;
@@ -185,14 +158,12 @@
 			border-right: 1px solid #BEBEC8;
 		}
 
-		.subline3 {
-			text-align: center;
-			vertical-align: center;
-			display: inline;
-			background: url('logo.png') center center no-repeat;
-			padding: 14px 41px;
-			margin-right: -8px;
-			border-top: 1px solid #BEBEC8;
+		
+
+		.cahoot {
+			/*border-top: 1px solid rgb(220,220,240);
+			padding: 12px 0;
+			margin: 0;*/
 		}
 
 
@@ -200,42 +171,23 @@
 </head>
 
 <body>
-
-<div id="mainPopup">
-	<div id="header">
-		<label>
-		    <select>
-		        <option selected id="author_title_short"> Select Box </option>
-		        <!-- <option>Short Option</option>
-		        <option>This Is A Longer Option</option> -->
-		    </select>
-		</label>
-		<p style="display: inline; margin-left: 20px; color: #A0A0AF; font-style: italic; font-weight: 400;">Zeit Online</p>
+	<div id="mainPopup">
+		<div id="header">
+			<div id="paper_name">Zeit Online</div>
+			<div id="cahoots_logo"></div>
+		</div>
+		<div id="content one">
+			<h1>Über <p id="paper_name2">Zeit Online</p></h1>
+			<p id="paper_description">Die Zeit hat durch ihre Herausgeber Josef Joffe und Helmut Schmidt viele Verbindungen zu transatlantischen Lobbyorganisationen.</p>
+		</div>
+		<div id="content two">
+			Für <select><option selected id="author_title_short"> Select Box </option></select> wurden <p class="cahoots_count">3</p> Verbindungen gefunden:
+			<ul id="cahoots">
+			</ul>
+		</div>
+		<footer>
+			<div class="subline1">Auf cahoots.io einsehen</div><div class="subline2">Informationen melden</div>
+		</footer>
 	</div>
-	<div class="content_paper">
-		<p id="count">Es wurden <strong>2</strong> Cahoots für Jochen Bittner gefunden:</p>
-	</div><br>
-
-	<dl class="accordion">
-	  <dt id="cahoot1"></dt>
-	  <dd>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</dd>
-	  <dt id="cahoot2"></dt>
-	  <dd>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</dd>
-	</dl>
-	<div class="content_author">
-		<h2>Über den Autor</h2>
-		<p id="description_author">Jochen Bittner (* 1973 in Frankenberg (Eder)) ist ein promovierter Jurist, Journalist und Publizist. Bittner studierte an der Universität Kiel Jura und Philosophie.</p>
-		<a id="src_author">[ SOURCE ]</a>
-	</div>
-	<div class="content_author">
-		<h2>Über die Website</h2>
-		<p id="description_paper">Zu dieser Publikation liegen keine Daten vor.</p>
-		<a id="src_paper">[ SOURCE ]</a>
-	</div>
-	<div class="subline1">Auf cahoots.io einsehen</div><div class="subline2">Informationen melden</div><div class="subline3"></div>
-</div>
-
-<script src="accordion.js" type="text/javascript"></script>
-
 </body>
 </html>
