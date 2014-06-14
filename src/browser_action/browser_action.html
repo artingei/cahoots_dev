@@ -54,25 +54,15 @@
 			float: right;
 		}
 
-		a {
-			position: relative;
-			left: 425px;
-			top: -100px;
-			font-size: 12px;
-			font-weight: 700;
-			color: #BEBEC8;
-			text-decoration: none;
+		#content {
+			border-bottom: 1px solid rgb(181,181,181);
+			padding: 10px 16px;
+			margin: 0 -8px;
 		}
 
-		a #src_cahoot {
-			display: inline;
-			text-align: right;
-			position: inherit;
-
-		}
 
 		h1 {
-			font-size: 1.6em;
+			font-size: 1em;
 			color: #000;
 			width: 100%;
 			font-weight: 700;
@@ -91,9 +81,9 @@
 		}
 
 		select {
-			font-size: 17px;
-		    padding:12px 32px;
-		    margin: 0;
+			font-size: 15px;
+		    padding:10px 34px;
+		    margin: 0 10px;
 		    -webkit-border-radius:3px;
 		    -moz-border-radius:3px;
 		    border-radius:3px;
@@ -105,7 +95,7 @@
 		    -moz-appearance:none;
 		    appearance:none;
 		    cursor:pointer;
-		    width: 300px;
+		    width: 206px;
 		}
 
 		label {position:relative}
@@ -115,18 +105,18 @@
 		    font:24px 'lato';
 		    font-weight: 100;
 		    color: transparent;
-		    right: 16px; top:-5px;
-		    padding:0 0 2px;
+		    right: 20px; 
+		    top:-4px;
+		    padding:0;
 		    position:absolute;
 		    pointer-events:none;
 		    background-color: none;
 		}
 		label:before {
-		    content:'·';
-		    font-size: 56px;
-		    left:10px; top:-5px;
+		    content:'';
+		    background: url('indicator.png') center center no-repeat;
+		    left:18px; top:0px;
 		    width:20px; height:20px;
-		    color: #FF3264;
 		    position:absolute;
 		    pointer-events:none;
 		    display:block;
@@ -176,13 +166,14 @@
 			<div id="paper_name">Zeit Online</div>
 			<div id="cahoots_logo"></div>
 		</div>
-		<div id="content one">
-			<h1>Über <p id="paper_name2">Zeit Online</p></h1>
+		<div id="content">
+			<h1>Über <span id="paper_name2">Zeit Online</span></h1>
 			<p id="paper_description">Die Zeit hat durch ihre Herausgeber Josef Joffe und Helmut Schmidt viele Verbindungen zu transatlantischen Lobbyorganisationen.</p>
 		</div>
-		<div id="content two">
-			Für <select><option selected id="author_title_short"> Select Box </option></select> wurden <p class="cahoots_count">3</p> Verbindungen gefunden:
+		<div id="content" style="background: #F2F2F4;">
+			Für <label><select><option selected id="author_title_short">Jochen Bittner</option><option select id="author_title_short">Meister Eder</option></select></label> wurden <span class="cahoots_count">3</span> Verbindungen gefunden:
 			<ul id="cahoots">
+				<li class="cahoot_item"><a class="links" title="Mehr Infos zu dieser Organisation" href="">Atlantik-Brücke <a class="quelle" href="">INFO</a><a class="quelle" href="">SOURCE</a></li>
 			</ul>
 		</div>
 		<footer>
