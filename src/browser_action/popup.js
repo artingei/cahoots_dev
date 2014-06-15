@@ -14,7 +14,7 @@ chrome.tabs.query({
         console.log(jd);
         //var num = jd.people.jbittner.cahoots;
         //console.log(num.length);
-        document.getElementById('paper_name2').innerHTML = jd.www.zeit.de.name;
+        document.getElementById('paper_name2').innerHTML = jd.zeit.name;
         document.getElementById('description').innerHTML = jd.general_info.description + '</a> <a class="quelle indesc" href="'+jd.general_info.src+'"> [QUELLE]</a>';
         //document.getElementById('author_title').innerHTML = "FÃ¼r <span class='auth'>" + jd.people.jbittner.name + "</span> wurden die folgenden <span id='total_cahoots'>"+jd.people.jbittner.cahoots.length+"</span>Verbindungen gefunden:"; 
         document.getElementById('author_title').innerHTML = "FÃ¼r <span class='auth'>" + jd.people.jbittner.name + "</span> wurden die folgenden Verbindungen gefunden:"; 
