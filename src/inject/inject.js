@@ -8,10 +8,31 @@ chrome.extension.sendMessage({}, function(response) {
 
 		var url = window.location.href;
 		var cleanUrl = url.match(/^[\w-]+:\/*\[?([\w\.:-]+)\]?(?::\d+)?/)[1];
-		console.log(cleanUrl); //debug
+		
+		console.log(cleanUrl); //DEBUG
 
-		$.getJSON(chrome.extension.getURL('sites.json'), function(sites) {
- 			console.log(sites);
+		$.getJSON(chrome.extension.getURL('test.json'), function(json) {
+ 			console.log(json);
+ 			
+ 			if (json.hasOwnProperty(cleanUrl)) {
+ 				console.log("yeah"); //DEBUG
+ 				//var obj = jQuery.parseJSON(json);
+ 				//console.log(obj[toString(cleanUrl)]);
+
+ 				/*
+ 				$.each(json.toString(cleanUrl).author, function(i, v) {
+ 					alert(name);
+ 					
+ 					var found = $('*:contains('v.name')');
+ 					if (found) {
+ 						console.log("found");
+ 					}
+ 					
+ 				});
+				*/
+				
+ 			}
+ 			
 		});
 
 

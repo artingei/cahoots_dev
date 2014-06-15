@@ -1,29 +1,17 @@
 {
-    "general_info": {
-        "title": "Zeit Online",
-        "description": "Die Zeit hat durch ihre Herausgeber <b>Josef Joffe</b> und <b>Helmut Schmidt</b> zahlreiche Verbindungen zu transatlantischen Lobbyorganisationen.",
-        "src": "http://de.wikipedia.org/wiki/Die_Zeit"
-        },
-    "people": {
-        "jbittner": {
-            "name": "Jochen Bittner",
-            "description": "Jochen Bittner (* 1973 in Frankenberg (Eder)) ist ein promovierter Jurist, Journalist und Publizist. Bittner studierte an der Universität Kiel Jura und Philosophie.",
-            "src": "http://de.wikipedia.org/wiki/Jochen_Bittner",
-            "url": "http://community.zeit.de/user/fritz-vorholz",
-            "cahoots": {
-                "1": {
-                    "name": "Atlantik-Brücke",
-                    "url": "http://www.atlantik-bruecke.org/",
-                    "description": "Die Atlantik-Brücke e. V. wurde 1952 als private, überparteiliche und gemeinnützige Organisation mit dem Ziel gegründet, eine wirtschafts-, finanz-, bildungs- und militärpolitische Brücke zwischen der Siegermacht USA und der Bundesrepublik Deutschland zu schlagen.",
-                    "src": "http://www.paul-schreyer.de/recherchen_63.html"
-                },
-                "2": {
-                    "name": "German Marshall Fund",
-                    "url": "missing_item",
-                    "description": "missing_item",
-                    "src": "missing_item"
-                }
+    "www.zeit.de": {
+        "info": "Die Zeit hat durch ihre Herausgeber Josef Joffe und Helmut Schmidt viele Verbindungen zu transatlantischen Lobbyorganisationen.",
+        "authors": [
+            {
+                "name": "Jochen Bittner",
+                "abbr": "J. Bittner",
+                "id": "0001"
+            },
+            {
+                "name": "Max Mustermann",
+                "abbr": "MM",
+                "id": "0002"
             }
-        }
+        ]
     }
 }
