@@ -7,14 +7,14 @@ chrome.tabs.query({
     var tab = array_of_Tabs[0];
     // Example:
     var url = tab.url.match(/^[\w-]+:\/*\[?([\w\.:-]+)\]?(?::\d+)?/)[1];
-    document.getElementById('subtitle').innerHTML = url;
+    //document.getElementById('paper_name').innerHTML = url;
 
-    $.getJSON("http://artingei.de/+++/mysql/"+url+".json", function(jd) {
+    $.getJSON("../../sites.json", function(jd) {
         //DEBUG
-        console.log(jd);
-        var num = jd.people.jbittner.cahoots;
-        console.log(num.length);
-        document.getElementById('title').innerHTML = "Ãœber " + jd.general_info.title;
+        //console.log(jd);
+        //var num = jd.people.jbittner.cahoots;
+        //console.log(num.length);
+        document.getElementById('paper_name').innerHTML = "Über " + jd.url.info;
         document.getElementById('description').innerHTML = jd.general_info.description + '</a> <a class="quelle indesc" href="'+jd.general_info.src+'"> [QUELLE]</a>';
         //document.getElementById('author_title').innerHTML = "FÃ¼r <span class='auth'>" + jd.people.jbittner.name + "</span> wurden die folgenden <span id='total_cahoots'>"+jd.people.jbittner.cahoots.length+"</span>Verbindungen gefunden:"; 
         document.getElementById('author_title').innerHTML = "FÃ¼r <span class='auth'>" + jd.people.jbittner.name + "</span> wurden die folgenden Verbindungen gefunden:"; 
