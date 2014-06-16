@@ -12,49 +12,23 @@ chrome.extension.sendMessage({}, function(response) {
 		console.log(cleanUrl); //DEBUG
 
 		$.getJSON(chrome.extension.getURL('test.json'), function(json) {
- 			console.log(json);
+ 			//console.log(json);
+ 			//console.log(cleanUrl);
+ 			//console.log(json[cleanUrl].authors);
  			
+ 			// Check if sites.json contains the clean URL of the current page
  			if (json.hasOwnProperty(cleanUrl)) {
- 				console.log("yeah"); //DEBUG
- 				//var obj = jQuery.parseJSON(json);
- 				//console.log(obj[toString(cleanUrl)]);
-
- 				/*
- 				$.each(json.toString(cleanUrl).author, function(i, v) {
- 					alert(name);
- 					
- 					var found = $('*:contains('v.name')');
- 					if (found) {
- 						console.log("found");
+ 				$.each(json[cleanUrl].authors, function(i,v) {
+ 					if (document.documentElement.innerHTML.indexOf(v.name) > 0) {
+ 						console.log(v.id);
  					}
- 					
  				});
-				*/
 				
  			}
  			
+ 			
 		});
 
-
-
-		//var file = chrome.extension.getURL('sites.json');
-		//var sites = JSON.parse('chrome-extension://nfjiejigebdablphnidgdcolmbfepgjg/sites.json');
-		//console.log(sites);
-
-
-		/*
-		$.getJSON('chrome-extension://nfjiejigebdablphnidgdcolmbfepgjg/sites.json', function(sites) {
-			$.each( sites, function(key, val) {
-				console.log(key+": "+val);
-			});
-    		console.log(sites); //debug
-    		console.log(sites.url);
-			//if (sites.hasOwnProperty("www.zeit.de")) {
-			//	console.log(yeah);
-			//};
-
-		    });
-		*/
 		
 		// ----------------------------------------------------------
 
