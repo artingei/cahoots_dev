@@ -1,0 +1,184 @@
+<!doctype html>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<base target="_blank">
+
+<head>
+	<script src="../../js/jquery-2.1.1.min.js" type="text/javascript"></script>
+	<script src="popup.js" type="text/javascript"></script>
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+	<style type="text/css">
+		#mainPopup {
+			font-family: Lato, sans-serif;
+			font-size: 15px;
+			color: #3C3C46;
+			padding: 0;
+			height: auto;
+			width: 500px;
+			line-height: 1.5em;
+		}
+
+		#header {
+			height: 60px;
+			width: 514px;
+			padding: 0px 8px;
+			margin: -8px -14px 0 -14px;
+			background: rgb(242,242,244);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-bottom: 1px solid rgb(190,190,200);
+		}
+
+		#paper_name {
+			width: 380px;
+			height: 100%;
+			font-size: 26px;
+			font-weight: 200;
+			align-self: flex-start;
+			margin: 17px 0 0 12px;
+			align-items: center;
+		  	justify-content: center;
+
+		}
+
+		#cahoots_logo {
+			text-align: center;
+			vertical-align: center;
+			align-self: flex-start;
+			width: 80px;
+			height: 29px;
+			background: url('logo.png') center center no-repeat #fff;
+			padding: 15px 20px;
+			margin-right: -8px;
+			border-left: 1px solid rgb(181,181,181);
+			float: right;
+		}
+
+		#content {
+			border-bottom: 1px solid rgb(181,181,181);
+			padding: 10px 16px;
+			margin: 0 -8px;
+		}
+
+
+		h1 {
+			font-size: 1em;
+			color: #000;
+			width: 100%;
+			font-weight: 700;
+		}
+		h2 {
+			font-size: 15px;
+			color: #3C3C46;
+			font-weight: 700;
+		}
+
+		#author_title {
+			margin-top: 20px;
+		}
+		#cahoots {
+			margin-top: 10px;
+		}
+
+		select {
+			font-size: 15px;
+		    padding:10px 34px;
+		    margin: 0 10px;
+		    -webkit-border-radius:3px;
+		    -moz-border-radius:3px;
+		    border-radius:3px;
+		    background: #fff;
+		    border: 1px solid #BEBEC8;
+		    outline:none;
+		    display: inline-block;
+		    -webkit-appearance:none;
+		    -moz-appearance:none;
+		    appearance:none;
+		    cursor:pointer;
+		    width: 206px;
+		}
+
+		label {position:relative}
+		label:after {
+		    content:'>';
+		    background: url('select.png') center center no-repeat;
+		    font:24px 'lato';
+		    font-weight: 100;
+		    color: transparent;
+		    right: 20px; 
+		    top:-4px;
+		    padding:0;
+		    position:absolute;
+		    pointer-events:none;
+		    background-color: none;
+		}
+		label:before {
+		    content:'';
+		    background: url('indicator.png') center center no-repeat;
+		    left:18px; top:0px;
+		    width:20px; height:20px;
+		    position:absolute;
+		    pointer-events:none;
+		    display:block;
+		}
+
+		strong {
+			font-weight: 800;
+			color: #FF3264;
+		}
+
+		.subline1 {
+			text-align: center;
+			vertical-align: center;
+			display: inline;
+			background: #F2F2F4;
+			padding: 14px 32px;
+			margin: 0 0 0 -8px;
+			border-top: 1px solid #BEBEC8;
+			border-right: 1px solid #BEBEC8;
+		}
+
+		.subline2 {
+			text-align: center;
+			vertical-align: center;
+			display: inline;
+			background: #F2F2F4;
+			padding: 14px 32px;
+			border-top: 1px solid #BEBEC8;
+			border-right: 1px solid #BEBEC8;
+		}
+
+		
+
+		.cahoot {
+			/*border-top: 1px solid rgb(220,220,240);
+			padding: 12px 0;
+			margin: 0;*/
+		}
+
+
+	</style>
+</head>
+
+<body>
+	<div id="mainPopup">
+		<div id="header">
+			<div id="paper_name"></div>
+			<div id="cahoots_logo"></div>
+		</div>
+		<div id="content">
+			<h1>Über <span id="paper_name2"></span></h1>
+			<p id="paper_description">Die Zeit hat durch ihre Herausgeber Josef Joffe und Helmut Schmidt viele Verbindungen zu transatlantischen Lobbyorganisationen.</p>
+		</div>
+		<div id="content" style="background: #F2F2F4;">
+			Für <label><select><option selected id="author_title_short">Jochen Bittner</option><option select id="author_title_short">Meister Eder</option></select></label> wurden <span class="cahoots_count">3</span> Verbindungen gefunden:
+			<ul id="cahoots">
+				<li class="cahoot_item"><a class="links" title="Mehr Infos zu dieser Organisation" href="">Atlantik-Brücke <a class="quelle" href="">INFO</a><a class="quelle" href="">SOURCE</a></li>
+			</ul>
+		</div>
+		<footer>
+			<div class="subline1">Auf cahoots.io einsehen</div><div class="subline2">Informationen melden</div>
+		</footer>
+	</div>
+</body>
+</html>

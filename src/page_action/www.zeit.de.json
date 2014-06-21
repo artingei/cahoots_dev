@@ -1,0 +1,25 @@
+{
+    "general_info": {
+        "title": "Zeit Online",
+        "description": "Die Zeit (in der Schreibweise des Verlags: DIE ZEIT) ist eine überregionale deutsche Wochenzeitung, die erstmals am 21. Februar 1946 erschien. Seit dem 1. Juli 1996 gehört der Zeit Verlag und somit die Zeit zur Verlagsgruppe Georg von Holtzbrinck.[1] Sie erscheint jeden Donnerstag; an Feiertagen wird der Erscheinungstag in der Regel vorgezogen."
+        },
+    "people": {
+        "FRITZ VORHOLZ": {
+            "url": "http://community.zeit.de/user/fritz-vorholz",
+            "cahoots": {
+                "1": {
+                    "name": "Atlantik-Brücke",
+                    "url": "http://www.atlantik-bruecke.org/",
+                    "description": "Die Atlantik-Brücke e. V. wurde 1952 als private, überparteiliche und gemeinnützige Organisation mit dem Ziel gegründet, eine wirtschafts-, finanz-, bildungs- und militärpolitische Brücke zwischen der Siegermacht USA und der Bundesrepublik Deutschland zu schlagen.",
+                    "src": "http://www.paul-schreyer.de/recherchen_63.html"
+                },
+                "2": {
+                    "name": "German Marshall Fund",
+                    "url": "missing_item",
+                    "description": "missing_item",
+                    "src": "missing_item"
+                }
+            }
+        }
+    }
+}

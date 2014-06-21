@@ -1,0 +1,29 @@
+{
+    "sites": [
+        {
+            "site_id": "zeit.de",
+            "name": "Die Zeit",
+            "info": "Die Zeit hat durch ihre Herausgeber Josef Joffe und Helmut Schmidt viele Verbindungen zu transatlantischen Lobbyorganisationen.",
+            "src": "www.google.de"
+        },
+        {
+            "site_id": "sueddeutsche.de",
+            "name": "Süddeutsche Zeitung",
+            "info": "Test.",
+            "src": "www.google.de"
+        }
+    ],
+    "authors": [
+        {
+            "id": "0001",
+            "name": "Jochen Bittner",
+            "cahoots": [
+                {
+                    "name": "Altlantik Brücke",
+                    "desc": "Beschreibung",
+                    "src": "www.google.de"
+                }
+            ]
+        }
+    ]
+}
