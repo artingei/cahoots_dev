@@ -127,13 +127,19 @@
 			color: #FF3264;
 		}
 
+		footer {
+			margin: -1px 0 0 -8px;
+			width: 520px;
+		}
+
 		.subline1 {
 			text-align: center;
 			vertical-align: center;
 			display: inline;
 			background: #F2F2F4;
-			padding: 14px 32px;
-			margin: 0 0 0 -8px;
+			padding: 14px 0;
+			width: 258px;
+			float: left;
 			border-top: 1px solid #BEBEC8;
 			border-right: 1px solid #BEBEC8;
 		}
@@ -143,11 +149,39 @@
 			vertical-align: center;
 			display: inline;
 			background: #F2F2F4;
-			padding: 14px 32px;
+			padding: 14px 0;
+			width: 258px;
+			float: left;
 			border-top: 1px solid #BEBEC8;
 			border-right: 1px solid #BEBEC8;
 		}
 
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		li {
+			margin: 6px 0;
+			padding: 6px 0;
+			border-top: 1px solid #BEBEC8;
+		}
+		li:nth-child(1) {
+			border-top: none !important;
+		}
+		ul li a {
+			text-decoration: none;
+			color: #3C3C46;
+		}
+		ul li a:nth-child(1) {
+			font-weight: 700;
+		}
+		ul li a:nth-child(2), ul li a:nth-child(3) {
+			float: right;
+			margin-left: 20px;
+		}
+		
 		
 
 		.cahoot {
@@ -163,7 +197,7 @@
 <body>
 	<div id="mainPopup">
 		<div id="header">
-			<div id="paper_name"></div>
+			<div id="paper_name">Zeit Online</div>
 			<div id="cahoots_logo"></div>
 		</div>
 		<div id="content">
@@ -173,7 +207,8 @@
 		<div id="content" style="background: #F2F2F4;">
 			Für <label><select><option selected id="author_title_short">Jochen Bittner</option><option select id="author_title_short">Meister Eder</option></select></label> wurden <span class="cahoots_count">3</span> Verbindungen gefunden:
 			<ul id="cahoots">
-				<li class="cahoot_item"><a class="links" title="Mehr Infos zu dieser Organisation" href="">Atlantik-Brücke <a class="quelle" href="">INFO</a><a class="quelle" href="">SOURCE</a></li>
+				<li class="cahoot_item"><a class="links" title="Mehr Infos zu dieser Organisation" href="">Atlantik-Brücke <a class="quelle" href="">Info</a><a class="quelle" href="">Source</a></li>
+				<li class="cahoot_item"><a class="links" title="Mehr Infos zu dieser Organisation" href="">Superbündnis <a class="quelle" href="">Info</a><a class="quelle" href="">Source</a></li>
 			</ul>
 		</div>
 		<footer>
