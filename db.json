@@ -1,7 +1,7 @@
 {
     "sites": [
         {
-            "site_id": "zeit.de",
+            "site_id": "www.zeit.de",
             "name": "Die Zeit",
             "info": "Die Zeit hat durch ihre Herausgeber Josef Joffe und Helmut Schmidt viele Verbindungen zu transatlantischen Lobbyorganisationen.",
             "src": "www.google.de"
@@ -15,43 +15,31 @@
     ],
     "authors": [
         {
-<<<<<<< HEAD
-            "id": "0001",
+            "id" : "0001",
             "name": "Jochen Bittner",
             "cahoots": [
                 {
-                    "name": "Altlantik Brücke",
-                    "desc": "Beschreibung",
-                    "src": "www.google.de"
+                    "name": "Europa-Union",
+                    "more_info": "http://de.wikipedia.org/wiki/Europa-Union",
+                    "src": "http://de.wikipedia.org/wiki/Jochen_Bittner#Mitgliedschaften.2C_Teilnahme_an_Kongressen"
+                },
+                {
+                    "name": "Brussels Forum",
+                    "more_info": "http://brussels.gmfus.org/about-the-forum/about/",
+                    "src": "http://de.wikipedia.org/wiki/Jochen_Bittner#Mitgliedschaften.2C_Teilnahme_an_Kongressen"
+                },
+                {
+                    "name": "Bertelsmann-Stiftung",
+                    "more_info": "http://de.wikipedia.org/wiki/Bertelsmann-Stiftung",
+                    "src": "http://de.wikipedia.org/wiki/Jochen_Bittner#Mitgliedschaften.2C_Teilnahme_an_Kongressen"
+                },
+                {
+                    "name": "Körber-Stiftung",
+                    "more_info": "http://de.wikipedia.org/wiki/K%C3%B6rber-Stiftung",
+                    "src": "http://de.wikipedia.org/wiki/Jochen_Bittner#Mitgliedschaften.2C_Teilnahme_an_Kongressen"
                 }
             ]
-=======
-            "ID0001" : {
-                "name": "Jochen Bittner",
-                "cahoots": [
-                    {
-                        "name": "Europa-Union",
-                        "more_info": "http://de.wikipedia.org/wiki/Europa-Union",
-                        "src": "http://de.wikipedia.org/wiki/Jochen_Bittner#Mitgliedschaften.2C_Teilnahme_an_Kongressen"
-                    },
-                    {
-                        "name": "Brussels Forum",
-                        "more_info": "http://brussels.gmfus.org/about-the-forum/about/",
-                        "src": "http://de.wikipedia.org/wiki/Jochen_Bittner#Mitgliedschaften.2C_Teilnahme_an_Kongressen"
-                    },
-                    {
-                        "name": "Bertelsmann-Stiftung",
-                        "more_info": "http://de.wikipedia.org/wiki/Bertelsmann-Stiftung",
-                        "src": "http://de.wikipedia.org/wiki/Jochen_Bittner#Mitgliedschaften.2C_Teilnahme_an_Kongressen"
-                    },
-                    {
-                        "name": "Körber-Stiftung",
-                        "more_info": "http://de.wikipedia.org/wiki/K%C3%B6rber-Stiftung",
-                        "src": "http://de.wikipedia.org/wiki/Jochen_Bittner#Mitgliedschaften.2C_Teilnahme_an_Kongressen"
-                    }
-                ]
-            }
->>>>>>> parent of 2177711... update
+            
         }
     ]
 }
