@@ -15,6 +15,7 @@
     ],
     "authors": [
         {
+<<<<<<< HEAD
             "id": "0001",
             "name": "Jochen Bittner",
             "cahoots": [
@@ -24,6 +25,33 @@
                     "src": "www.google.de"
                 }
             ]
+=======
+            "ID0001" : {
+                "name": "Jochen Bittner",
+                "cahoots": [
+                    {
+                        "name": "Europa-Union",
+                        "more_info": "http://de.wikipedia.org/wiki/Europa-Union",
+                        "src": "http://de.wikipedia.org/wiki/Jochen_Bittner#Mitgliedschaften.2C_Teilnahme_an_Kongressen"
+                    },
+                    {
+                        "name": "Brussels Forum",
+                        "more_info": "http://brussels.gmfus.org/about-the-forum/about/",
+                        "src": "http://de.wikipedia.org/wiki/Jochen_Bittner#Mitgliedschaften.2C_Teilnahme_an_Kongressen"
+                    },
+                    {
+                        "name": "Bertelsmann-Stiftung",
+                        "more_info": "http://de.wikipedia.org/wiki/Bertelsmann-Stiftung",
+                        "src": "http://de.wikipedia.org/wiki/Jochen_Bittner#Mitgliedschaften.2C_Teilnahme_an_Kongressen"
+                    },
+                    {
+                        "name": "Körber-Stiftung",
+                        "more_info": "http://de.wikipedia.org/wiki/K%C3%B6rber-Stiftung",
+                        "src": "http://de.wikipedia.org/wiki/Jochen_Bittner#Mitgliedschaften.2C_Teilnahme_an_Kongressen"
+                    }
+                ]
+            }
+>>>>>>> parent of 2177711... update
         }
     ]
 }

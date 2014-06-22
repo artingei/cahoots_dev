@@ -34,6 +34,7 @@ chrome.tabs.query({
 
 
 chrome.runtime.sendMessage({'method':'get_site'},function(response_site){
+<<<<<<< HEAD
   var site = response_site;
   document.getElementById('paper_name2').innerHTML = site;
 
@@ -41,6 +42,27 @@ chrome.runtime.sendMessage({'method':'get_site'},function(response_site){
     var siteinfo = response_siteinfo;
     document.getElementById('paper_description').innerHTML = siteinfo;
     });
+=======
+    var site = response_site;
+    chrome.runtime.sendMessage({'method':'get_id'},function(response_id){
+        var id = response_id;
+        $.getJSON("../../db.json", function(db) {
+            $.each(db.sites, function(i,v) {
+                if ( v.site_id == site ) {
+                    document.getElementById('paper_name2').innerHTML = v.name;
+                    document.getElementById('paper_description').innerHTML = v.info;
+                }
+            });
+
+            console.log(id);
+
+            var str_id = "ID"+id;
+
+            $.each(db.authors.ID0001.cahoots, function(i,v) {
+                $('#cahoots').append('<li>' + v.name + '</li>');
+            });
+        });
+>>>>>>> parent of 2177711... update
 
   chrome.runtime.sendMessage({'method':'get_id'},function(response_id){
     var id = response_id;
