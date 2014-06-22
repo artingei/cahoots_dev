@@ -173,13 +173,13 @@
 		ul li a {
 			text-decoration: none;
 			color: #3C3C46;
+		}
+		ul li a:nth-child(1) {
 			font-weight: 700;
 		}
-
-		.quelle {
+		ul li a:nth-child(2), ul li a:nth-child(3) {
 			float: right;
 			margin-left: 20px;
-			font-weight: 400;
 		}
 		
 		
@@ -197,24 +197,22 @@
 <body>
 	<div id="mainPopup">
 		<div id="header">
-			<div id="paper_name">Connections found</div>
+			<div id="paper_name">Zeit Online</div>
 			<div id="cahoots_logo"></div>
 		</div>
 		<div id="content">
-			<h1>Über <span id="paper_name"></span></h1>
-			<p id="paper_description">Test</p>
+			<h1>Über <span id="paper_name2"></span></h1>
+			<p id="paper_description">Die Zeit hat durch ihre Herausgeber Josef Joffe und Helmut Schmidt viele Verbindungen zu transatlantischen Lobbyorganisationen.</p>
 		</div>
 		<div id="content" style="background: #F2F2F4;">
-<<<<<<< HEAD
-			For <label><select><option selected id="author_title_short">Jochen Bittner</option><option select id="author_title_short">Meister Eder</option></select></label><span class="cahoots_count">3</span> connections has been found:
-=======
-			Für <label><select></select></label> wurden die folgenden Verbindungen gefunden:
->>>>>>> FETCH_HEAD
+			Für <label><select><option selected id="author_title_short">Jochen Bittner</option><option select id="author_title_short">Meister Eder</option></select></label> wurden <span class="cahoots_count">3</span> Verbindungen gefunden:
 			<ul id="cahoots">
+				<li class="cahoot_item"><a class="links" title="Mehr Infos zu dieser Organisation" href="">Atlantik-Brücke <a class="quelle" href="">Info</a><a class="quelle" href="">Source</a></li>
+				<li class="cahoot_item"><a class="links" title="Mehr Infos zu dieser Organisation" href="">Superbündnis <a class="quelle" href="">Info</a><a class="quelle" href="">Source</a></li>
 			</ul>
 		</div>
 		<footer>
-			<div class="subline1">www.cahoots.ninja</div><div class="subline2">Contribute information</div>
+			<div class="subline1">Auf cahoots.io einsehen</div><div class="subline2">Informationen melden</div>
 		</footer>
 	</div>
 </body>
