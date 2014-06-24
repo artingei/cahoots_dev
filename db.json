@@ -38,6 +38,15 @@
                     "more_info": "http://de.wikipedia.org/wiki/K%C3%B6rber-Stiftung",
                     "src": "http://de.wikipedia.org/wiki/Jochen_Bittner#Mitgliedschaften.2C_Teilnahme_an_Kongressen"
                 }
+            ],
+        "id" : "0002",
+            "name": "Robert Leicht",
+            "cahoots": [
+                {
+                    "name": "Atlantik Brücke",
+                    "more_info": "http://de.wikipedia.org/wiki/Atlantik-Br%C3%BCcke",
+                    "src": "http://spiegelkabinett-blog.blogspot.de/2013/03/journalisten-der-atlantikbrucke-in.html"
+                }
             ]
             
         }

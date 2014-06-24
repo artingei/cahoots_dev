@@ -13,10 +13,6 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 		site = request.site;
 	} else if (request.method == "get_site") {
 		sendResponse(site);
-	} else if (request.method == "set_siteinfo") {
-		siteinfo = request.siteinfo;
-	} else if (request.method == "get_siteinfo") {
-		sendResponse(siteinfo);
 	}
 });
 
